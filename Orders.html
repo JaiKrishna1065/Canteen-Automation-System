@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automeal - Orders</title>
+    <link rel="stylesheet" href="Orders.css">
+    <link rel="icon" href="images/Automeal-Logo.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Past Orders</h1>
+        <!-- Sorting Controls -->
+        <a href="index.html" class="home"><h5>Back to Home</h5></a>
+        <div class="sorting-controls">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="date">Date</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+            </select>
+        </div>
+        
+        <!-- Orders Table -->
+        <div class="orders-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order Date</th>
+                        <th>Items</th>
+                        <th>Total Price</th>
+                        <th>Payment Method</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-list">
+                    <!-- JavaScript will insert past orders here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Orders.js"></script>
+</body>
+</html>

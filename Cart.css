@@ -1,0 +1,113 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-image: url('Home.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pay{
+  text-decoration: none;
+  color:inherit;
+}
+#cart-items {
+  max-height: 50vh; /* Adjust this value based on your layout */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Optional: Adds a border for better visibility */
+  background-color: #f9f9f9; /* Optional: Light background for distinction */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: space-between; /* Evenly distributes space between items */
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  gap: 10px; /* Optional, adds spacing between elements */
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 1rem;
+  flex: 1; /* Allows the text to occupy equal space */
+  text-align: center; /* Center-align text */
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.remove-item {
+  margin-left: 10px;
+  height: 25px;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  text-align: center;
+  line-height: 25px;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h5{
+  color: #007bff;
+}
+
+#checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+.home{
+  text-decoration: none;
+  color:inherit;
+}

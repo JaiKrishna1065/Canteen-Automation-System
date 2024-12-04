@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automeal - Home Page</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="images/Automeal-Logo.png">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">&#10006;</div>
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="orders.html" class="menu-item">Orders</a>
+        <a href="Cart.html" class="menu-item">Cart</a>
+        
+        <!-- Contact section at the bottom -->
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>abc@gmail.com</p>
+            <p>+91 29089754706</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+            <h1 class="logo">AUTOMEAL</h1>
+            <div class="cart-icon " ><a href="Cart.html" class="cart">&#128722;</a></div>
+        </header>
+
+        <!-- <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search" oninput="showRecommendations()">
+            <button class="search-btn">&#128269;</button>
+            <ul id="recommendations" class="recommendations-list"></ul>
+        </div> -->
+
+        <h2 class="tagline">Nothing brings people together like good food</h2>
+
+        <div class="categories">
+            <div class="category">
+                <a href="Breakfast.html">
+                    <img src="images/Breakfast.png" alt="Breakfast">
+                    <p>Breakfast</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="Lunch.html">
+                    <img src="images/Lunch.png" alt="Lunch">
+                    <p>Lunch</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="Snacks.html">
+                    <img src="images/Snack.png" alt="Snacks">
+                    <p>Snacks</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="Bakery.html">
+                    <img src="images/Bakery.png" alt="Bakery">
+                    <p>Bakery</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="Home.js"></script>
+</body>
+</html>

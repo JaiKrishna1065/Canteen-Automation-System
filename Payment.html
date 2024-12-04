@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automeal - Payment</title>
+    <link rel="stylesheet" href="Payment.css">
+    <link rel="icon" href="images/Automeal-Logo.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Payment Information</h1>
+            <a href="cart.html">Back to Cart</a>
+        </header>
+
+        <section>
+            <!-- Contact Number Input -->
+            <div class="contact-number">
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" placeholder="Enter your contact number" required>
+            </div>
+
+            <!-- Cash on Delivery -->
+            <div class="payment-method">
+                <button class="btn">Cash On Delivery</button>
+            </div>
+
+            <!-- UPI with dropdown options -->
+            <div class="payment-method dropdown">
+                <button class="btn2">UPI</button>
+                <ul class="dropdown-content">
+                    <li><button class="btn3">PhonePe</button></li>
+                    <li><button class="btn4">GPay</button></li>
+                    <li><button class="btn5">Paytm</button></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="Payment.js"></script>
+</body>
+</html>
